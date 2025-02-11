@@ -1,0 +1,214 @@
+{
+    "context": {
+        "domain": "ONDC:RET10",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "select",
+        "version": "2.0.2",
+<<<<<<< HEAD:B2B/Export-2.0.1/Rapidor/RFQ buyer App Export Flow/Flow 1/select.json
+        "transaction_id": "212e7d5f-568a-4533-b925-e49615daa501",
+        "message_id": "52676a1a-9cec-4b23-be54-a5bff7b67386",
+        "timestamp": "2024-01-15T15:34:47.996Z",
+        "bap_id": "ondcpreprodb2b.rapidor.co",
+        "bap_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/buyer",
+        "bpp_id": "preprod-seller.signcatch.com",
+        "bpp_uri": "https://preprod-seller.signcatch.com/",
+        "ttl": "P1D"
+    },
+    "message": {
+        "order": {
+            "fulfillments": [
+                {
+                    "id": "F1",
+                    "type": "Delivery",
+                    "stops": [
+                        {
+                            "type": "end",
+                            "location": {
+                                "address": "singapore, singapore, 3943+6WH, singapore, Singapore, 729826",
+                                "gps": "1.332002,103.849434",
+                                "area_code": "729826",
+                                "state": {
+                                    "name": "Central Singapore Community Development Council"
+                                },
+                                "city": {
+                                    "name": "Singapore"
+                                },
+                                "country": {
+                                    "code": "SGP"
+                                }
+                            },
+                            "contact": {
+                                "phone": "9947328084"
+                            }
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "DELIVERY_TERMS"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "INCOTERMS"
+                                    },
+                                    "value": "EXW"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "NAMED_PLACE_OF_DELIVERY"
+                                    },
+                                    "value": "singapor"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "id": "4624",
+=======
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/retail/bap",
+        "transaction_id": "e930668a-0d65-446d-bd67-3bb226682999",
+        "message_id": "f4eddd2b-7ef3-46cb-b8a1-16bedb45995e",
+        "timestamp": "2025-02-03T10:12:00.981Z",
+        "ttl": "P1D",
+        "bpp_id": "preprod-ondc.khetisauda.com",
+        "bpp_uri": "https://preprod-ondc.khetisauda.com"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "P9080",
+                "locations": [
+                    {
+                        "id": "67580ba80f5cad8920d74a81"
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "items": [
+                {
+                    "id": "6776841d49c82277c6c4ab8e",
+>>>>>>> upstream/main:logs/Navankur/Buyer Side Cancellation/select.json
+                    "location_ids": [
+                        "67580ba80f5cad8920d74a81"
+                    ],
+                    "fulfillment_ids": [
+                        "1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 200
+                        }
+                    },
+                    "add_ons": [
+                        {
+                            "id": "78787723"
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "BUYER_TERMS"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "ITEM_REQ"
+                                    },
+                                    "value": "free text on Item Customization"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "PACKAGING_REQ"
+                                    },
+                                    "value": "free text on packaging Customization"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Delivery",
+                    "stops": [
+                        {
+                            "type": "end",
+                            "location": {
+                                "gps": "12.974002,77.613458",
+                                "area_code": "560001",
+                                "city": {
+                                    "name": "Bengaluru"
+                                },
+                                "country": {
+                                    "code": "IND"
+                                },
+                                "state": {
+                                    "name": "Karnataka"
+                                }
+                            },
+                            "contact": {
+                                "phone": "9886098860"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "payments": [
+                {
+                    "type": "PRE-FULFILLMENT"
+                }
+            ],
+            "tags": [
+                {
+                    "descriptor": {
+                        "code": "buyer_id"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "buyer_id_code"
+                            },
+                            "value": "gst"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "buyer_id_no"
+                            },
+<<<<<<< HEAD:B2B/Export-2.0.1/Rapidor/RFQ buyer App Export Flow/Flow 1/select.json
+                            "value": "33AWAPS4854L1Z6"
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "code": "COMM_CHANNEL"
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "chat_url"
+                            },
+                            "value": "https://ondcpreprodb2b.rapidor.co/v1/ondc/chat?chat_id=212e7d5f-568a-4533-b925-e49615daa501&token=xxxx"
+=======
+                            "value": "xxxxxxxxxxxxxxx"
+>>>>>>> upstream/main:logs/Navankur/Buyer Side Cancellation/select.json
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
